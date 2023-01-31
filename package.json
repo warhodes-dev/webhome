@@ -1,0 +1,17 @@
+{
+  "name": "webhome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npm run build:cp-all",
+    "build:cp-all": "cp ./public/** ./dist && cp ./assets/** ./dist/assets",
+    "type": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
